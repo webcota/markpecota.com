@@ -1,0 +1,61 @@
+.header {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.logo-text {
+  float:left;
+}
+.logo-text a {
+  color: #2D2A2A;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  color: #2D2A2A;
+}
+
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+  color: #2D2A2A;
+}
+
+
+.d-5of7 {
+  float: none;
+  margin: 0 auto;
+}
+
+.hentry {
+  border: none;
+}
+
+.hentry header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.entry-content {
+  padding-top: 0.5em;
+}
+
+.search {
+  float:right;
+}
+
+.searchform {
+  width:259px;
+}
+
+.searchform input[type="text"] {
+  width: 75.3%;
+  float:left;
+}
+
+.searchform input[type="submit"] {
+  float:right;
+  height: 40px;
+}
+.screen-reader-text {
+  
+}
