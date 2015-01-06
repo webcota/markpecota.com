@@ -33,7 +33,6 @@
 									<header class="article-header">
 										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 									</header>
-									<h2><?php the_field('subheadline'); ?></h2>
 									<section class="entry-content">
 										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
 									</section>

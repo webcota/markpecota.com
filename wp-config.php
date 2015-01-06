@@ -16,13 +16,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'markdotcom');
 
 /** MySQL database username */
-define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,14 +39,6 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'XlCRv{xP:,[P!V[=m)Jtw`, 0$ IN.(VC=Z_pRW`q@ckT+=bFT1wo;^%Nw;-Y(-`');
-define('SECURE_AUTH_KEY',  '-]`(kkoRsh@`Raa|6CeJM/01:^;{aAf}n(&g$qpEA-5*hax60ues+Ie,B|0kav3L');
-define('LOGGED_IN_KEY',    '|j|Dg1M: H huBvz/:2{)Sd6|BvJ4|9OB{jl)Ka%=.HF(SB{7T$8RdQm+@3o=@t@');
-define('NONCE_KEY',        '+ZLVC;&L7&nY/E#L&hDoufND+r7|Jw(WV5K/3Q0/T89WTE~CRd37w:$xy i%AlR3');
-define('AUTH_SALT',        'ph@g+gW#Gx$HegkrJjREs?2ZOm8n:k6}pwZ~w##..|5J:p/+9rXH`vc-1& S#vjy');
-define('SECURE_AUTH_SALT', '|;`A Ahd0!`?+th,8Ilks:sg%PA6Rv<k|O8hLN|VRq6)bwM#T!h]I>9PNQtn>+J$');
-define('LOGGED_IN_SALT',   'P8`F(3zLtB^}gRQhsR$m%&nEyX-(#h#>osF=8J^:Ba8:2#+0-{LRSt5Lrr51YtTW');
-define('NONCE_SALT',       'c38Uv9#*u/y`s194QTN1q 5,+Q-EePn0!a`My?g5>erl+NB| Ul,{b}MIGB+6{~t');
 
 /**#@-*/
 
@@ -77,4 +66,16 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
+define('FS_METHOD', 'direct');
+define('AUTH_KEY',         'e?9sbY|H0~=5AG`1-|r%T:PMGkwo{7jq  <m/*J^R[p;wzr:u(Tz]1?nrjkxn92!');
+define('SECURE_AUTH_KEY',  ')#$1&[|6]2/fjK_zjd06yMu`omP]%M|*mVb0hFm}#7{o<Rk8+zZSvXL8c<S+^4y6');
+define('LOGGED_IN_KEY',    '.E[g>w2|(;M7-]JcpGyMVKNKI_I$Z=FLMEel0<-KegAZ&${8=B`]W%uDQ33qYz|<');
+define('NONCE_KEY',        'rZTS){|w~DkJ25u!Q(>~r;7ehDj]4E</8lDj(*|Y17%r[|dk>p9|}s|W6_@rz^+|');
+define('AUTH_SALT',        'Ldt@G/Cg.TZ`ES;+?T)-4WLB#ByX=AM0,WvPsSL)V1&!R-4.nNG7v%@Ri-B*kp#d');
+define('SECURE_AUTH_SALT', 'j0nk:y+!r8g>%]=KbVN=%N4hvV($9aA9!If:PfR-*voQD!g_|Kb-4_4Bbe<&Q0Bl');
+define('LOGGED_IN_SALT',   'WfegpJr{ ugxb7Q|d0c?WUVhhuWynkGYLI:+g^wT,SrfjinF<.iMNC={W+(&)H=X');
+define('NONCE_SALT',       '~[%vA#?L*|.:2|f^8ha.:<cxEXGT@x|+E3L-:~/aL~+oXk5g~B5q +`abt/Y|+}b');
+define('DB_NAME', 'wordpress');
+define('DB_USER', 'wordpress');
+define('DB_PASSWORD', 'f9cnn17vAS');
 require_once(ABSPATH . 'wp-settings.php');

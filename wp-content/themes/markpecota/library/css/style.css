@@ -85,7 +85,7 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0 0 0 0; }
 
 /* ==========================================================================
    Links
@@ -117,7 +117,6 @@ a:hover {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  font-size: 2em;
   margin: 0.67em 0; }
 
 /**
@@ -237,8 +236,8 @@ menu {
 
 ol,
 ul {
-  padding: 0;
-  list-style-type: none; }
+  padding: 0 0 0 1.8em;
+   }
 
 /*
  * Corrects list images handled incorrectly in IE7.
@@ -979,7 +978,6 @@ textarea,
 .field {
   display: block;
   height: 40px;
-  line-height: 40px;
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
@@ -1248,10 +1246,11 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: 'PT Serif', georgia, serif;
+  font-family: 'Droid Serif', georgia, serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
+  color: #2D2A2A;
+  color: rgba(0, 0, 0, 0.8);
   background-color: #fff;
   -webkit-font-smoothing: antialiased; }
 
@@ -1305,12 +1304,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #AD141E;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: #10A8F9; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1325,6 +1324,8 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 700;
+  color: #2D2A2A;
+  font-family: 'Montserrat', arial, sans-serif; 
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
@@ -1333,17 +1334,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
-h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em; }
+  h1, .h1 {
+  font-size: 2em; 
+  line-height: 1.333em;}
 
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  h2, .h2 {
+   font-size: 1.5em;
+     line-height: 1.4em;
+  margin-bottom: 0.375em;
+ }
 
-h3, .h3 {
-  font-size: 1.125em; }
+  h3, .h3 {
+    font-size: 1.2em;
+    color:#767676;
+}
 
 h4, .h4 {
   font-size: 1.1em;
@@ -1359,10 +1363,11 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
+  border-bottom: 1px solid #EAEAEA;
  }
 
 #logo {
-  margin: 0.75em 0; }
+  margin: 0em 0; }
 
 
 /*********************
@@ -1391,7 +1396,7 @@ and more scalable.
     */ }
     .nav li a {
       display: block;
-      color: white;
+      color: #2D2A2A;
       text-decoration: none;
       padding: 0.75em;
       /*
@@ -1404,6 +1409,72 @@ and more scalable.
     .nav li ul.children li a {
       padding-left: 30px; }
 
+.logo-text a {
+  color: #2D2A2A;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+#logo {
+  float:left;
+}
+
+.search-form-top {
+  float:right;
+  height:40px;
+}
+
+
+
+.search-form-top .screen-reader-text {
+  float:left;
+  margin-right: .5em;
+  margin-top: 11px;
+  cursor: pointer;
+  -webkit-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  -moz-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  -ms-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  -o-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+}
+.search-form-top .screen-reader-text:hover {
+  opacity: .8;
+}
+.search-form-top input[type="text"] {
+  max-width: 180px;
+  float:left;
+  margin-right: .5em;
+
+}
+.search-form-top input[type="submit"] {
+  padding: 10px;
+  border: 1px solid #2D2A2A;
+  background-color: #FFF;
+  border-radius: 3px;
+  -webkit-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  -moz-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  -ms-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  -o-transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  transition: all cubic-bezier(0.42,.04,.21,.97) 300ms;
+  }
+
+.search-form-top input[type="submit"]:hover {
+  border: 1px solid #3794C5;
+  background-color: #10A8F9;
+  border-radius: 3px;
+  color: #FFF;
+
+}
+
+.no-show {
+  display: none !important;
+}
+
+.fa-times {
+  color: #CCC !important;
+}
+
 /* end .nav */
 /*********************
 POSTS & CONTENT STYLES
@@ -1415,10 +1486,12 @@ POSTS & CONTENT STYLES
   background-color: white;
   border-radius: 3px;
   margin-bottom: 1.5em;
-  border: 1px solid #cccccc; }
+   }
   .hentry header {
     border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
+    padding: 1.5em; 
+    text-align: center;
+  }
   .hentry footer {
     padding: 1.5em;
     border-top: 1px solid #f8f9fa; }
@@ -1448,7 +1521,8 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-  padding: 24px;
+  font-size: 1em;
+  padding: 3em 1.3em 1em;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
@@ -1456,7 +1530,9 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */ }
   .entry-content p {
-    margin: 0 0 1.5em; }
+    margin: 0 0 1.5em; 
+    line-height: 30px;
+  }
   .entry-content table {
     width: 100%;
     border: 1px solid #eaedf2;
@@ -1533,6 +1609,36 @@ POSTS & CONTENT STYLES
 /* gallery caption styles */
 .tags {
   margin: 0; }
+
+
+/* Homepage article listing styles */
+
+.home .hentry header, .home .hentry header h1 a {
+  text-align: left;
+  color: #2D2A2A;
+}
+
+.home .hentry header h1 a:hover {
+  color: #AD141E;
+}
+
+.home .subheadline {
+  color: #767676;
+  font-size: 1.15em;
+  margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+.home .hentry {
+  margin-bottom: 0;
+}
+
+.subheadline {
+  color: #767676;
+  font-size: 1.3em;
+  margin-top: 0.3em;
+    margin-bottom: 1.5em;
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1850,6 +1956,9 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  .entry-content {
+  font-size: 1.2em;
+}
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -1859,11 +1968,27 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+
+h1, .h1 {
+  font-size: 3em;
+ }
+
+h2, .h2 {
+ font-size: 2em;
+}
+
+h3, .h3 {
+  font-size: 1.4em;
+}
+
+
   /*********************
   NAVIGATION STYLES
   *********************/
   .nav {
     border: 0;
+    float: right;
+    margin-right: 1.5em;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -1884,7 +2009,7 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: white;
+          color: #10A8F9;
           text-decoration: underline; }
       .nav li ul.sub-menu,
       .nav li ul.children {
@@ -2116,3 +2241,137 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
+
+
+
+@media screen and (min-width: 768px) {
+.menu-btn {
+  display: none;
+}
+.m-down {
+  position:relative;
+  display: none;
+
+}
+}
+
+@media screen and (max-width: 768px){
+
+.m-down {
+  display: block;
+  border-bottom: 1px solid #EAEAEA;
+}
+.desktop {
+  display: none;
+}
+/* Menu Appearance */
+.menu-btn {
+  display: block;
+}
+
+.pushy{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    background: #333332;
+    font-size: 0.9em;
+    font-weight: bold;
+    -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
+}
+
+.pushy a{
+    display: block;
+    color: #b3b3b1;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    text-decoration: none;
+}
+
+.pushy a:hover{
+    background: #00b4ff;
+    color: #FFF;
+}
+
+/* Menu Movement */
+
+.pushy-left{
+    -webkit-transform: translate3d(-215px,0,0);
+    -moz-transform: translate3d(-215px,0,0);
+    -ms-transform: translate3d(-215px,0,0);
+    -o-transform: translate3d(-215px,0,0);
+    transform: translate3d(-215px,0,0);
+}
+
+.pushy-open{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.container-push, .push-push{
+    -webkit-transform: translate3d(200px,0,0);
+    -moz-transform: translate3d(200px,0,0);
+    -ms-transform: translate3d(200px,0,0);
+    -o-transform: translate3d(200px,0,0);
+    transform: translate3d(200px,0,0);
+}
+
+/* Menu Transitions */
+
+.pushy, #container, .push{
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
+    -moz-transition: -moz-transform .2s cubic-bezier(.16, .68, .43, .99);
+    -o-transition: -o-transform .2s cubic-bezier(.16, .68, .43, .99);
+    transition: transform .2s cubic-bezier(.16, .68, .43, .99);
+}
+
+/* Site Overlay */
+
+.site-overlay{
+    display: none;
+}
+
+.pushy-active .site-overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-animation: fade 500ms; 
+    -moz-animation: fade 500ms; 
+    -o-animation: fade 500ms;
+    animation: fade 500ms;
+}
+
+@keyframes fade{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fade{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fade{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+}

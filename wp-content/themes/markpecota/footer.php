@@ -28,7 +28,8 @@
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
-
+		<script type="text/javascript" src="/wp-content/themes/markpecota/library/js/main.js"></script>
+		<script type="text/javascript" src="/wp-content/themes/markpecota/library/js/pushy.min.js"></script>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

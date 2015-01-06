@@ -6,6 +6,11 @@
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
 	<head>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<!-- 		<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'> -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		
 		<meta charset="utf-8">
 
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
@@ -37,31 +42,37 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
-		<link rel='stylesheet'  href='/wp-content/themes/markpecota/library/css/mark.css' type='text/css' media='all' />
-		<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		
 	</head>
 
 	<body <?php body_class(); ?>>
-
-		<div id="container">
+		
+		
+		
 
 			<header class="header" role="banner">
 
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="logo-text"><a href="<?php echo home_url(); ?>" rel="nofollow">Mark Pecota</a></p>
+					<p id="logo" class="logo-text desktop"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
 
 					<nav role="navigation">
+						
+						<div class="search-form-top desktop">
+						<?php get_search_form(); ?>
+						</div>
 						<?php wp_nav_menu(array(
     					'container' => false,                           // remove nav container
     					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
     					'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
+    					'menu_class' => 'nav top-nav cf pushy pushy-left',               // adding custom nav class
     					'theme_location' => 'main-nav',                 // where it's located in the theme
     					'before' => '',                                 // before the menu
         			'after' => '',                                  // after the menu
@@ -72,10 +83,18 @@
 						)); ?>
 					</nav>
 
-					<div class="search">
-						<?php get_search_form(); ?>
-					</div>
+					
+
 					
 				</div>
 
 			</header>
+			<div class="site-overlay"></div>
+			<div id="container">
+				<div class="m-down">
+					<a href="#" class="menu-btn">&#9776; Menu</a>
+					<a href="/" class="logo-text home-link"><?php bloginfo('name'); ?></a>
+				</div>
+				
+
+
